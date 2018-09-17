@@ -1,5 +1,11 @@
 var capital = (function(sentence) {  
 
-return (sentence.charAt(0).toUpperCase + sentence.slice(1));
+   var firstchr = sentence.charAt(0);
 
-}("i am a developer"));	
+   var rest = (sentence.substring(1));
+
+   firstchr = firstchr.toUpperCase();
+
+   document.write(firstchr+rest);
+
+}("i am a developer"));
